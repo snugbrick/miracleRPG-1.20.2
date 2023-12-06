@@ -1,18 +1,23 @@
 {
   "itemGroup.miralcerpg.combat_group": "奇迹RPG物品",
+  "enchantment.miraclerpg.miracle_sharp": "奇迹锋利",
 
   "item.miraclerpg.bilvzhiren": "碧绿之刃 位阶1/4",
   "item.miraclerpg.bilvzhiren2": "碧绿之刃 位阶2/4",
   "item.miraclerpg.bilvzhiren3": "碧绿之刃 位阶3/4",
   "item.miraclerpg.bilvzhiren4": "碧绿之刃 位阶4/4",
+  "item.miraclerpg.bilvzhizheng": "碧绿之证",
 
   "item.miraclerpg.chihongzhiren": "赤红之刃 位阶1/4",
   "item.miraclerpg.chihongzhiren2": "赤红之刃 位阶2/4",
   "item.miraclerpg.chihongzhiren3": "赤红之刃 位阶3/4",
   "item.miraclerpg.chihongzhiren4": "赤红之刃 位阶4/4",
   "item.miraclerpg.chihongbaoshi": "赤红宝石",
-  "item.miraclerpg.chihongkuangshi": "赤红矿石"
+  "item.miraclerpg.chihongkuangshi": "赤红矿石",
 
-
+  "item.miraclerpg.dianlanzhiren": "靛蓝之刃 位阶1/4",
+  "item.miraclerpg.dianlanzhiren2": "靛蓝之刃 位阶2/4",
+  "item.miraclerpg.dianlanzhiren3": "靛蓝之刃 位阶3/4",
+  "item.miraclerpg.dianlanzhiren4": "靛蓝之刃 位阶4/4"
 
 }

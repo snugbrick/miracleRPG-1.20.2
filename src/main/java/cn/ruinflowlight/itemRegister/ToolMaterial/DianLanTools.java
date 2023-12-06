@@ -1,36 +1,14 @@
 package cn.ruinflowlight.itemRegister.ToolMaterial;
 
-import cn.ruinflowlight.itemRegister.biLvitemReg;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Rarity;
 
 /**
  * @author MiracleUR -> github.com/snugbrick
- * @version 1.0.0 2023.12.06 21:44
+ * @version 1.0.0 2023.12.07 02:12
  */
-public class BiLvTools implements ToolMaterial {
-/*
-    extend Item
-
-    public BiLvTools(Settings settings) {
-        super(settings);
-    }
-    @Override
-    public boolean isFireproof(){
-        return true;
-    }
-    @Override
-    public Rarity getRarity(ItemStack stack){
-        return Rarity.RARE;
-    }
- */
-
-    //上面是Item的重写，下面是ToolMaterial的实现
-
+public class DianLanTools implements ToolMaterial {
     @Override
     public int getDurability() {
         return 500;
@@ -58,6 +36,6 @@ public class BiLvTools implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(biLvitemReg.biLvZhiZheng);
+        return Ingredient.ofItems(Items.POTATO);
     }
 }

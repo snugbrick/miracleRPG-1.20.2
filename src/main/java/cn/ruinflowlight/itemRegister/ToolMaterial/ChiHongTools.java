@@ -1,11 +1,8 @@
 package cn.ruinflowlight.itemRegister.ToolMaterial;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Rarity;
 
 /**
  * @author MiracleUR -> github.com/snugbrick
@@ -13,6 +10,8 @@ import net.minecraft.util.Rarity;
  */
 public class ChiHongTools implements ToolMaterial {
     /*
+    extend Item
+
     public ChiHongTools(Settings settings) {
         super(settings);
     }
