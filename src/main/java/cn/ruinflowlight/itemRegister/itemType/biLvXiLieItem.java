@@ -18,6 +18,7 @@ import net.minecraft.world.World;
  * @author MiracleUR -> github.com/snugbrick
  * @version 1.0.0 2023.12.05 17:50
  */
+@Deprecated
 public class biLvXiLieItem extends Item {
     public biLvXiLieItem(Settings settings) {
         super(settings);
@@ -57,7 +58,7 @@ public class biLvXiLieItem extends Item {
     }
     @Override
     public Rarity getRarity(ItemStack stack){
-        return Rarity.EPIC;
+        return Rarity.RARE;
     }
     @Override
     public boolean canRepair(ItemStack stack, ItemStack ingredient){

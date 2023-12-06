@@ -18,6 +18,7 @@ import net.minecraft.world.World;
  * @author MiracleUR -> github.com/snugbrick
  * @version 1.0.0 2023.12.06 03:44
  */
+@Deprecated
 public class chiHongXiLieItem extends Item {
     public chiHongXiLieItem(Settings settings) {
         super(settings);
@@ -56,7 +57,7 @@ public class chiHongXiLieItem extends Item {
     }
     @Override
     public Rarity getRarity(ItemStack stack){
-        return Rarity.EPIC;
+        return Rarity.RARE;
     }
     @Override
     public boolean canRepair(ItemStack stack, ItemStack ingredient){

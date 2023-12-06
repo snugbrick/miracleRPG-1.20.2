@@ -19,7 +19,7 @@ import static cn.ruinflowlight.itemRegister.biLvitemReg.biLvZhiZheng;
 public class RPGitemGroup {
     private static final ItemGroup rgpItemGroup = FabricItemGroup.builder()
             .icon(() -> new ItemStack(biLvZhiZheng))
-            .displayName(Text.translatable("itemGroup.miraclerpg.combat_group"))
+            .displayName(Text.translatable("奇迹RPG物品"))
             .entries((context, entries) -> {
                 entries.add(biLvitemReg.biLvZhiRen);
                 entries.add(biLvitemReg.biLvZhiRen2);
@@ -30,6 +30,10 @@ public class RPGitemGroup {
                 entries.add(chiHongXiLieReg.chiHongZhiRen2);
                 entries.add(chiHongXiLieReg.chiHongZhiRen3);
                 entries.add(chiHongXiLieReg.ChiHongZhiRen4);
+
+                entries.add(biLvitemReg.biLvZhiZheng);
+                entries.add(chiHongXiLieReg.chiHongBaoShi);
+                entries.add(chiHongXiLieReg.chiHongKuangShi);
             })
             .build();
     public static void GroupRegister(){
