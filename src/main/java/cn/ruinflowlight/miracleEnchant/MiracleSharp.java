@@ -5,6 +5,9 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 
 
 /**
@@ -38,5 +41,8 @@ public class MiracleSharp extends Enchantment {
         }
 
         super.onTargetDamaged(user, target, level);
+    }
+    public void EnchantRegister(){
+        Registry.register(Registries.ENCHANTMENT, new Identifier("miraclerpg", "miracle_sharp"), this);
     }
 }

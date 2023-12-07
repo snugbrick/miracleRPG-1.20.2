@@ -1,6 +1,7 @@
 package cn.ruinflowlight;
 
-import cn.ruinflowlight.itemRegister.DingLanItemReg;
+import cn.ruinflowlight.BlocksReg.BiYuKuang;
+import cn.ruinflowlight.itemRegister.DianLanItemReg;
 import cn.ruinflowlight.itemRegister.biLvitemReg;
 import cn.ruinflowlight.itemRegister.chiHongXiLieReg;
 import cn.ruinflowlight.itemRegister.itemGroupReg.RPGitemGroup;
@@ -8,10 +9,6 @@ import cn.ruinflowlight.listener.PlayerRightClickLis;
 import cn.ruinflowlight.miracleEnchant.MiracleSharp;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
@@ -22,19 +19,21 @@ import org.slf4j.LoggerFactory;
 public class MiracleRPG implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("miraclerpg");
 
-    public static Enchantment miracleSharp = new MiracleSharp();
     @Override
     public void onInitialize() {
         LOGGER.info("MiracleRPG has been initialized!");
         biLvitemReg.registerItem();
         chiHongXiLieReg.registerItem();
-        DingLanItemReg.registerItem();
+        DianLanItemReg.registerItem();//物品注册
 
-        RPGitemGroup.GroupRegister();
+        BiYuKuang.BlocksRegister();//方块注册
 
-        Registry.register(Registries.ENCHANTMENT, new Identifier("miraclerpg", "miracle_sharp"), miracleSharp);
+        RPGitemGroup.GroupRegister();//物品组注册
 
-        ListenerReg();
+        MiracleSharp MS=new MiracleSharp();
+        MS.EnchantRegister();//附魔注册
+
+        ListenerReg();//监听器注册
 
     }
     private void ListenerReg(){

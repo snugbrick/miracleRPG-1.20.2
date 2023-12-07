@@ -1,5 +1,6 @@
 package cn.ruinflowlight.itemRegister.itemGroupReg;
 
+import cn.ruinflowlight.itemRegister.DianLanItemReg;
 import cn.ruinflowlight.itemRegister.biLvitemReg;
 import cn.ruinflowlight.itemRegister.chiHongXiLieReg;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -30,6 +31,12 @@ public class RPGitemGroup {
                 entries.add(chiHongXiLieReg.chiHongZhiRen2);
                 entries.add(chiHongXiLieReg.chiHongZhiRen3);
                 entries.add(chiHongXiLieReg.ChiHongZhiRen4);
+
+                entries.add(DianLanItemReg.dianlanzhiren);
+                entries.add(DianLanItemReg.dianlanzhiren2);
+                entries.add(DianLanItemReg.dianlanzhiren3);
+                entries.add(DianLanItemReg.dianlanzhiren4);
+
 
                 entries.add(biLvitemReg.biLvZhiZheng);
                 entries.add(chiHongXiLieReg.chiHongBaoShi);

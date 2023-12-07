@@ -12,23 +12,23 @@ import net.minecraft.util.Identifier;
  * @author MiracleUR -> github.com/snugbrick
  * @version 1.0.0 2023.12.07 02:13
  */
-public class DingLanItemReg {
-    public static final ToolItem dinglanzhiren
+public class DianLanItemReg {
+    public static final ToolItem dianlanzhiren
             =new SwordItem(new DianLanTools(),8,-2.4F,
             new Item.Settings());
-    public static final ToolItem dinglanzhiren2
+    public static final ToolItem dianlanzhiren2
             =new SwordItem(new DianLanTools(),10,-2.4F,
             new Item.Settings());
-    public static final ToolItem dinglanzhiren3
+    public static final ToolItem dianlanzhiren3
             =new SwordItem(new DianLanTools(),12,-2.4F,
             new Item.Settings());
-    public static final ToolItem dinglanzhiren4
+    public static final ToolItem dianlanzhiren4
             =new SwordItem(new DianLanTools(),14,-2.4F,
             new Item.Settings());
     public static void registerItem(){
-        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dinglanzhiren"), dinglanzhiren);
-        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dinglanzhiren2"), dinglanzhiren2);
-        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dinglanzhiren3"), dinglanzhiren3);
-        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dinglanzhiren4"), dinglanzhiren4);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanzhiren"), dianlanzhiren);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanzhiren2"), dianlanzhiren2);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanzhiren3"), dianlanzhiren3);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanzhiren4"), dianlanzhiren4);
     }
 }
