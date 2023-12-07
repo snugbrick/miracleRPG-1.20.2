@@ -32,8 +32,7 @@ public class MiracleRPG implements ModInitializer {
 
         RPGitemGroup.GroupRegister();
 
-        Registry.register(Registries.ENCHANTMENT, new Identifier("miraclerpg", "miracle_sharp"),
-                miracleSharp);
+        Registry.register(Registries.ENCHANTMENT, new Identifier("miraclerpg", "miracle_sharp"), miracleSharp);
 
         ListenerReg();
 
