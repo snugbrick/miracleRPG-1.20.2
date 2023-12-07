@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 /**
  * @author MiracleUR -> github.com/snugbrick
  * @version 1.0.0 2023.12.06 03:46
- *
+ * <p>
  * 赤红系列武器装备
  */
 public class chiHongXiLieReg {
@@ -32,6 +32,8 @@ public class chiHongXiLieReg {
             .maxCount(64));
     public static final Item chiHongKuangShi = new Item(new FabricItemSettings()
             .maxCount(64));
+    public static Item chiTieDing = new Item(new FabricItemSettings().maxCount(64));
+
 
     public static void registerItem() {
         Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chihongzhiren"), chiHongZhiRen);
@@ -40,5 +42,7 @@ public class chiHongXiLieReg {
         Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chihongzhiren4"), ChiHongZhiRen4);
         Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chihongbaoshi"), chiHongBaoShi);
         Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chihongkuangshi"), chiHongKuangShi);
+
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chitieding"), chiTieDing);
     }
 }

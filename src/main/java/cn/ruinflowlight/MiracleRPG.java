@@ -5,12 +5,17 @@ import cn.ruinflowlight.itemRegister.DianLanItemReg;
 import cn.ruinflowlight.itemRegister.biLvitemReg;
 import cn.ruinflowlight.itemRegister.chiHongXiLieReg;
 import cn.ruinflowlight.itemRegister.itemGroupReg.RPGitemGroup;
+import cn.ruinflowlight.itemRegister.simpleItem;
 import cn.ruinflowlight.listener.PlayerRightClickLis;
 import cn.ruinflowlight.miracleEnchant.MiracleSharp;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import static cn.ruinflowlight.itemRegister.itemGroupReg.simpleItemsGroupReg.pullFieldInItem;
+import static cn.ruinflowlight.itemRegister.itemGroupReg.simpleItemsGroupReg.simpleItems;
+
 /**
  * 本mod由于遗留原因，大量采用拼音命名法，主打一个炫酷
  * 
@@ -25,6 +30,7 @@ public class MiracleRPG implements ModInitializer {
         biLvitemReg.registerItem();
         chiHongXiLieReg.registerItem();
         DianLanItemReg.registerItem();//物品注册
+        simpleItem.ItemsRegister();
 
         BiYuKuang.BlocksRegister();//方块注册
 
@@ -34,6 +40,8 @@ public class MiracleRPG implements ModInitializer {
         MS.EnchantRegister();//附魔注册
 
         ListenerReg();//监听器注册
+
+        pullFieldInItem();//将simpleItem压入数组
 
     }
     private void ListenerReg(){

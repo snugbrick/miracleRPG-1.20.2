@@ -1,6 +1,7 @@
 package cn.ruinflowlight.itemRegister;
 
 import cn.ruinflowlight.itemRegister.ToolMaterial.DianLanTools;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolItem;
@@ -25,10 +26,16 @@ public class DianLanItemReg {
     public static final ToolItem dianlanzhiren4
             =new SwordItem(new DianLanTools(),14,-2.4F,
             new Item.Settings());
+    public static final Item dianLanBaoShi = new Item(new FabricItemSettings()
+            .maxCount(64));
+    public static final Item dianLanDing = new Item(new FabricItemSettings()
+            .maxCount(64));
     public static void registerItem(){
         Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanzhiren"), dianlanzhiren);
         Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanzhiren2"), dianlanzhiren2);
         Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanzhiren3"), dianlanzhiren3);
         Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanzhiren4"), dianlanzhiren4);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanbaoshi"), dianLanBaoShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg","dianlanding"), dianLanDing);
     }
 }
