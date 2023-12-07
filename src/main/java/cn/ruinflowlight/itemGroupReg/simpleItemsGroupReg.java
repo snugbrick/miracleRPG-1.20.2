@@ -1,4 +1,4 @@
-package cn.ruinflowlight.itemRegister.itemGroupReg;
+package cn.ruinflowlight.itemGroupReg;
 
 import cn.ruinflowlight.itemRegister.simpleItem;
 import net.minecraft.item.Item;
@@ -17,13 +17,10 @@ public class simpleItemsGroupReg {
     public static void pullFieldInItem(){//将类中的域压入数组
         for (Field field : ItemsField) {
             try {
-
+                field.setAccessible(true);
                 for (int i = 0; i < ItemsField.length; i++) {
-                    ItemsField[i].setAccessible(true);
                     simpleItems[i] = (Item) ItemsField[i].get(ItemsClass);
                 }
-
-
             } catch (IllegalAccessException | IllegalStateException e) {
                 e.printStackTrace();
             }

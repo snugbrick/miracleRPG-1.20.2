@@ -1,9 +1,9 @@
-package cn.ruinflowlight.itemRegister.itemGroupReg;
+package cn.ruinflowlight.itemGroupReg;
 
+import cn.ruinflowlight.ArmorReg.AusterityReg;
 import cn.ruinflowlight.itemRegister.DianLanItemReg;
 import cn.ruinflowlight.itemRegister.biLvitemReg;
 import cn.ruinflowlight.itemRegister.chiHongXiLieReg;
-import cn.ruinflowlight.itemRegister.simpleItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -43,6 +43,12 @@ public class RPGitemGroup {
                 entries.add(DianLanItemReg.dianlanzhiren3);
                 entries.add(DianLanItemReg.dianlanzhiren4);
 
+                entries.add(AusterityReg.AUSTERITY_MATERIAL_HELMET);
+                entries.add(AusterityReg.AUSTERITY_MATERIAL_CHESTPLATE);
+                entries.add(AusterityReg.AUSTERITY_MATERIAL_LEGGINGS);
+                entries.add(AusterityReg.AUSTERITY_MATERIAL_BOOTS);
+
+
                 entries.add(DianLanItemReg.dianLanDing);
                 entries.add(DianLanItemReg.dianLanBaoShi);
                 entries.add(chiHongXiLieReg.chiTieDing);
@@ -55,22 +61,7 @@ public class RPGitemGroup {
                for(Item item:simpleItemsGroupReg.simpleItems){
                    entries.add(item);
                }
-/*
-                entries.add(simpleItem.chiLun0);
-                entries.add(simpleItem.chilun1);
-                entries.add(simpleItem.chilun3);
-                entries.add(simpleItem.chilun4);
-                entries.add(simpleItem.chilun5);
 
-                entries.add(simpleItem.chuJiJingHua);
-                entries.add(simpleItem.zhongJiJingHua);
-                entries.add(simpleItem.gaoJiJingHua);
-                entries.add(simpleItem.ziRanJingHua);
-                entries.add(simpleItem.chuangWeiJingHua);
-
-                entries.add(simpleItem.buRongBing);
-
- */
             })
             .build();
 
